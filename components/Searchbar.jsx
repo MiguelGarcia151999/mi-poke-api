@@ -11,7 +11,7 @@ const Searchbar = () => {
     setSearch(e.target.value);
   };
 
-  const onClick = async (e) => {
+  const BonClick = async (e) => {
     const data = await searchPokemon(search);
     setPokemon(data);
   };
@@ -22,7 +22,7 @@ const Searchbar = () => {
         <input placeholder="Buscar Pokemon..." onChange={onChange} />
       </div>
       <div className="searchbar-bttn">
-        <button onClick={onClick}>Buscar</button>
+        <button onClick={() => BonClick()}>Buscar</button>
       </div>
     </div>
   );

@@ -1,119 +1,230 @@
 * {
-    margin: 0px;
-  }
-  
-  nav {
-    height: 100px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-  
-  .navbar-image {
-    width: 160px;
-  }
-  
-  .searchbar-container {
-    display: flex;
-    margin: 0px auto;
-    padding: 0 20px;
-    align-items: center;
-  }
-  
-  .searchbar {
-    background: white;
-  }
-  .searchbar input {
-    padding: 10px;
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
-    border-radius: 3px;
-    border: none;
-  }
-  .searchbar input:focus {
-    outline: none;
-  }
-  .searchbar-bttn button {
-    background-color: #363636;
-    border: none;
-    border-radius: 10px;
-    height: 44px;
-    color: white;
-    padding: 10px 12px;
-    margin-left: 15px;
-  }
-  
-  .header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-  }
-  
-  .pokedex-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 18px;
-    padding: 0px 10px;
-  }
-  
-  .pokemon-card {
-    display: flex;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 3px;
-  }
-  
-  .pokemon-img-container {
-    padding: 0px 5px;
-  }
-  
-  .pokemon-img {
-    width: 70px;
-    height: 70px;
-  }
-  
-  .pokemon-type {
-    display: flex;
-  }
-  
-  .pokemon-type-text {
-    margin-right: 10px;
-    text-transform: capitalize;
-  }
-  
-  .card-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 10px 10px 10px 10px;
-    flex: 1;
-  }
-  
-  .card-top {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .card-bottom {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .card-top h3 {
-    text-transform: capitalize;
-  }
-  
-  .pagination {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-  
-  .App {
-    font-family: sans-serif;
-  }
+  margin: 0px;
+}
+
+nav {
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.navbar-image {
+  width: 160px;
+}
+
+.searchbar-container {
+  display: flex;
+  margin: 0px auto;
+  padding: 0 20px;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+}
+
+.searchbar {
+  background: white;
+  text-transform: capitalize;
+}
+.searchbar input {
+  padding: 10px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  border: none;
+  width: 850px;
+  align-items: center;
+  text-transform: capitalize;
+}
+.searchbar input:focus {
+  outline: none;
+}
+.searchbar-bttn button {
+  background-color: #363636;
+  border: none;
+  border-radius: 10px;
+  height: 44px;
+  color: white;
+  padding: 10px 12px;
+  margin-left: 15px;
+}
+.bttn-move-page {
+  background-color: #363636;
+  border: none;
+  border-radius: 100px;
+  height: 44px;
+  color: white;
+  padding: 0px 18px;
+  margin-left: 15px;
+  margin-right: 12px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.pokedex-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 18px;
+  padding: 0px 10px;
+}
+
+.pokemon-card {
+  display: flex;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+}
+
+.pokemon-img-container {
+  padding: 0px 5px;
+}
+
+.pokemon-img {
+  width: 70px;
+  height: 70px;
+}
+
+.pokemon-type {
+  display: flex;
+}
+
+.pokemon-type-text {
+  margin-right: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  text-transform: capitalize;
+  border-radius: 10px;
+}
+
+.poison {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: 2px solid rgb(176, 88, 160);
+}
+.fire {
+  background-color: rgba(255, 255, 255, 0.913);
+  color: rgb(0, 0, 0);
+  border: 2px solid rgb(240, 80, 48);
+}
+.water {
+  background-color: rgba(255, 255, 255, 0.913);
+  color: rgb(0, 0, 0);
+  border: 2px solid rgb(56, 153, 248);
+}
+.electric {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: 2px solid rgb(248, 208, 48);
+}
+.flying {
+  background-color: rgba(255, 255, 255, 0.913);
+  color: rgb(1, 1, 1);
+  border: 2px solid rgba(52, 188, 190, 0.913);
+}
+.grass {
+  background-color: rgba(255, 255, 255, 0.913);
+  color: rgb(1, 1, 1);
+  border: 2px solid rgb(120, 200, 80);
+}
+.bug {
+  background-color: rgba(255, 255, 255, 0.913);
+  color: rgb(1, 1, 1);
+  border: 2px solid rgb(168, 184, 32);
+}
+.normal {
+  background-color: rgba(255, 255, 255, 0.913);
+  color: rgb(1, 1, 1);
+  border: 2px solid rgb(168, 160, 144);
+}
+.ground {
+  background-color: rgba(255, 255, 255, 0.913);
+  color: rgb(1, 1, 1);
+  border: 2px solid rgb(148, 112, 13);
+}
+.fairy {
+  background-color: rgba(255, 255, 255, 0.913);
+  color: rgb(1, 1, 1);
+  border: 2px solid rgb(231, 159, 231);
+}
+.fighting {
+  background-color: rgba(255, 255, 255, 0.913);
+  color: rgb(1, 1, 1);
+  border: 2px solid rgb(160, 80, 56);
+}
+.rock {
+  background-color: rgba(255, 255, 255, 0.913);
+  color: rgb(1, 1, 1);
+  border: 2px solid rgb(184, 160, 88);
+}
+.psychic {
+  background-color: rgba(255, 255, 255, 0.913);
+  color: rgb(1, 1, 1);
+  border: 2px solid rgb(248, 112, 160);
+}
+.steel {
+  background-color: rgba(255, 255, 255, 0.913);
+  color: rgb(1, 1, 1);
+  border: 2px solid rgb(168, 168, 192);
+}
+.ice {
+  background-color: rgba(255, 255, 255, 0.913);
+  color: rgb(1, 1, 1);
+  border: 2px solid rgb(88, 200, 224);
+}
+.ghost {
+  background-color: rgba(255, 255, 255, 0.913);
+  color: rgb(1, 1, 1);
+  border: 2px solid rgb(96, 96, 176);
+}
+.dragon {
+  background-color: rgba(255, 255, 255, 0.913);
+  color: rgb(1, 1, 1);
+  border: 2px solid rgb(160, 80, 56);
+}
+.dark {
+  background-color: rgba(255, 255, 255, 0.913);
+  color: rgb(1, 1, 1);
+  border: 2px solid rgb(66, 66, 66);
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 10px 10px 10px;
+  flex: 1;
+}
+
+.card-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-top h3 {
+  text-transform: capitalize;
+}
+
+.pagination {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.App {
+  font-family: sans-serif;
+}

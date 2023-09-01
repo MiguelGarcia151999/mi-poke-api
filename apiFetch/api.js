@@ -3,6 +3,7 @@ export const searchPokemon = async (pokemon) => {
       let url = `https://pokeapi.co/api/v2/pokemon/${pokemon}`;
       const response = await fetch(url);
       const data = await response.json();
+      console.log(data)
       return data;
     } catch (error) {}
   };
@@ -20,6 +21,8 @@ export const searchPokemon = async (pokemon) => {
     try {
       const response = await fetch(url);
       const data = await response.json();
+
+      console.log('pitochu' ,data)
       return data;
     } catch (error) {}
   };
