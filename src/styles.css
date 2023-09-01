@@ -48,6 +48,11 @@ nav {
   padding: 10px 12px;
   margin-left: 15px;
 }
+.inactivo{
+    background-color: grey;
+    pointer-events: none;
+    color: black;
+}
 .bttn-move-page {
   background-color: #363636;
   border: none;
