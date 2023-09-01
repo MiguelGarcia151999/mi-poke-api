@@ -22,7 +22,6 @@ export const searchPokemon = async (pokemon) => {
       const response = await fetch(url);
       const data = await response.json();
 
-      console.log('pitochu' ,data)
       return data;
     } catch (error) {}
   };

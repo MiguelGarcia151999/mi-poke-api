@@ -1,10 +1,13 @@
 import React from "react";
 import { searchPokemon } from "../apiFetch/api";
+import ModalTarjetaPokemon from "../components/Modal";
 const { useState } = React;
 
 const Searchbar = () => {
   const [search, setSearch] = useState("");
   const [pokemon, setPokemon] = useState("");
+  const [openModal, setOpenModal] = useState(false);
+  const [stateBttn, setStateBttn] = useState(false)
 
   const onChange = (e) => {
     //console.log(e.target.value);
@@ -12,19 +15,30 @@ const Searchbar = () => {
   };
 
   const BonClick = async (e) => {
-    const data = await searchPokemon(search);
-    setPokemon(data);
+    let data = await searchPokemon(search);
+    let pokeName = data.name
+    setPokemon(pokeName);
+    setOpenModal(true);
   };
 
   return (
-    <div className="searchbar-container">
-      <div className="searchbar">
-        <input placeholder="Buscar Pokemon..." onChange={onChange} />
+    <>
+      <div className="searchbar-container">
+        <div className="searchbar">
+          <input placeholder="Buscar Pokemon..." onChange={onChange} />
+        </div>
+        <div className="searchbar-bttn">
+          <button onClick={() => BonClick()}>Buscar</button>
+        </div>
       </div>
-      <div className="searchbar-bttn">
-        <button onClick={() => BonClick()}>Buscar</button>
-      </div>
-    </div>
+      {openModal && (
+        <ModalTarjetaPokemon
+          pokemon={pokemon}
+          setOpenModal={setOpenModal}
+          openModal={openModal}
+        />
+      )}
+    </>
   );
 };
 
