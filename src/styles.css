@@ -48,10 +48,10 @@ nav {
   padding: 10px 12px;
   margin-left: 15px;
 }
-.inactivo{
-    background-color: grey;
-    pointer-events: none;
-    color: black;
+.inactivo {
+  background-color: grey;
+  pointer-events: none;
+  color: black;
 }
 .bttn-move-page {
   background-color: #363636;
@@ -234,15 +234,27 @@ nav {
   font-family: sans-serif;
 }
 
+
 .pokeModal {
   position: fixed;
   z-index: 100;
   margin-top: 100px;
-  margin-left: 50%;
+  margin-left: 25%;
   background-color: antiquewhite;
-  width: 200px;
+  width: 700px;
   height: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+.modalPokemon-img{
+  width: 300px;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 100px;
+  margin-top: -40px;
 }
