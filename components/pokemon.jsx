@@ -3,9 +3,8 @@ import FavoriteContext from "../context/favoritesContext";
 
 const Pokemon = (props) => {
   const { pokemon } = props;
-  const { favoritePokemons, updateFavoritePokemons } = useContext(
-    FavoriteContext
-  );
+  const { favoritePokemons, updateFavoritePokemons } =
+    useContext(FavoriteContext);
 
   const redHeart = "❤️";
   const blackHeart = "🖤";
@@ -17,6 +16,24 @@ const Pokemon = (props) => {
 
   return (
     <div className="pokemon-card">
+
+      <div className="pokemon-cardHeader">
+        <div>
+            Nº {pokemon.id}
+            </div>
+        <div>
+            <button onClick={clickHeart}>
+                <div className="pokemon-favorite">{heart}</div>
+            </button>
+        </div>
+      </div>
+
+      <div className="pokemon-cardBody">
+        <h1>HOladlerkbfnrkñlkbnkdk</h1>
+      </div>
+
+    </div>
+    /*<div className="pokemon-card">
       <div className="pokemon-img-container">
         <img
           src={pokemon.sprites.front_default}
@@ -44,7 +61,7 @@ const Pokemon = (props) => {
           </button>
         </div>
       </div>
-    </div>
+    </div>*/
   );
 };
 

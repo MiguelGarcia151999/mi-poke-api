@@ -21,10 +21,10 @@ nav {
 .like {
   display: flex;
 }
- .count{
-    color:rgb(255, 255, 255);
-    padding-left: 10px;
- }
+.count {
+  color: rgb(255, 255, 255);
+  padding-left: 10px;
+}
 
 .searchbar-container {
   display: flex;
@@ -86,15 +86,26 @@ nav {
   padding: 10px;
 }
 
+.pokemon-cardHeader {
+  color: rgb(255, 255, 255);
+  display: flex;
+}
+.pokemon-cardHeader div:frist-child{
+background: red;
+color: blue;
+}
 .pokedex-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   grid-gap: 18px;
   padding: 0px 10px;
 }
 
 .pokemon-card {
   display: flex;
+  flex-direction: column;
+  width: 270px;
+  height: 400px;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 3px;
   border: 2px solid rgba(192, 237, 45, 0.463);
