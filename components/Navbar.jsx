@@ -16,7 +16,11 @@ const Navbar = () => {
       <div>
         <img src={imageUrl} alt="pokeapi-logo" className="navbar-image" />
       </div>
-      <div>&#10084;&#65039; {favoritePokemons.length}</div>
+      <div className="like">
+        <div>&#10084;&#65039; </div>
+        <div className="count">{favoritePokemons.length}</div>
+      </div>
+      
     </nav>
   );
 };

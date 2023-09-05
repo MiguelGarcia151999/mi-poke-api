@@ -2,6 +2,10 @@
   margin: 0px;
 }
 
+body {
+  background-color: rgb(20, 20, 20);
+}
+
 nav {
   height: 100px;
   display: flex;
@@ -13,6 +17,14 @@ nav {
 .navbar-image {
   width: 160px;
 }
+
+.like {
+  display: flex;
+}
+ .count{
+    color:rgb(255, 255, 255);
+    padding-left: 10px;
+ }
 
 .searchbar-container {
   display: flex;
@@ -26,6 +38,7 @@ nav {
 .searchbar {
   background: white;
   text-transform: capitalize;
+  border-radius: 10px;
 }
 .searchbar input {
   padding: 10px;
@@ -66,6 +79,7 @@ nav {
 
 .header {
   display: flex;
+  color: rgb(255, 255, 255);
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -83,6 +97,7 @@ nav {
   display: flex;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 3px;
+  border: 2px solid rgba(192, 237, 45, 0.463);
 }
 
 .pokemon-img-container {
@@ -109,83 +124,67 @@ nav {
 }
 
 .poison {
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   border: 2px solid rgb(176, 88, 160);
 }
 .fire {
-  background-color: rgba(255, 255, 255, 0.913);
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   border: 2px solid rgb(240, 80, 48);
 }
 .water {
-  background-color: rgba(255, 255, 255, 0.913);
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   border: 2px solid rgb(56, 153, 248);
 }
 .electric {
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   border: 2px solid rgb(248, 208, 48);
 }
 .flying {
-  background-color: rgba(255, 255, 255, 0.913);
-  color: rgb(1, 1, 1);
+  color: rgb(255, 255, 255);
   border: 2px solid rgba(52, 188, 190, 0.913);
 }
 .grass {
-  background-color: rgba(255, 255, 255, 0.913);
-  color: rgb(1, 1, 1);
+  color: rgb(255, 255, 255);
   border: 2px solid rgb(120, 200, 80);
 }
 .bug {
-  background-color: rgba(255, 255, 255, 0.913);
-  color: rgb(1, 1, 1);
+  color: rgb(255, 255, 255);
   border: 2px solid rgb(168, 184, 32);
 }
 .normal {
-  background-color: rgba(255, 255, 255, 0.913);
-  color: rgb(1, 1, 1);
+  color: rgb(255, 255, 255);
   border: 2px solid rgb(168, 160, 144);
 }
 .ground {
-  background-color: rgba(255, 255, 255, 0.913);
-  color: rgb(1, 1, 1);
+  color: rgb(255, 255, 255);
   border: 2px solid rgb(148, 112, 13);
 }
 .fairy {
-  background-color: rgba(255, 255, 255, 0.913);
-  color: rgb(1, 1, 1);
+  color: rgb(255, 255, 255);
   border: 2px solid rgb(231, 159, 231);
 }
 .fighting {
-  background-color: rgba(255, 255, 255, 0.913);
-  color: rgb(1, 1, 1);
+  color: rgb(255, 255, 255);
   border: 2px solid rgb(160, 80, 56);
 }
 .rock {
-  background-color: rgba(255, 255, 255, 0.913);
-  color: rgb(1, 1, 1);
+  color: rgb(255, 255, 255);
   border: 2px solid rgb(184, 160, 88);
 }
 .psychic {
-  background-color: rgba(255, 255, 255, 0.913);
-  color: rgb(1, 1, 1);
+  color: rgb(255, 255, 255);
   border: 2px solid rgb(248, 112, 160);
 }
 .steel {
-  background-color: rgba(255, 255, 255, 0.913);
-  color: rgb(1, 1, 1);
+  color: rgb(255, 255, 255);
   border: 2px solid rgb(168, 168, 192);
 }
 .ice {
-  background-color: rgba(255, 255, 255, 0.913);
-  color: rgb(1, 1, 1);
+  color: rgb(255, 255, 255);
   border: 2px solid rgb(88, 200, 224);
 }
 .ghost {
-  background-color: rgba(255, 255, 255, 0.913);
-  color: rgb(1, 1, 1);
+  color: rgb(255, 255, 255);
   border: 2px solid rgb(96, 96, 176);
 }
 .dragon {
@@ -194,8 +193,7 @@ nav {
   border: 2px solid rgb(160, 80, 56);
 }
 .dark {
-  background-color: rgba(255, 255, 255, 0.913);
-  color: rgb(1, 1, 1);
+  color: rgb(255, 255, 255);
   border: 2px solid rgb(66, 66, 66);
 }
 .card-body {
@@ -208,6 +206,7 @@ nav {
 
 .card-top {
   display: flex;
+  color: rgb(255, 255, 255);
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -234,6 +233,17 @@ nav {
   font-family: sans-serif;
 }
 
+.ContenedorModal {
+  width: 500px;
+  height: 500px;
+  min-height: 100px;
+  background: #fff;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 20px;
+  background-color: rgb(163, 159, 159);
+}
 
 .pokeModal {
   position: fixed;
@@ -250,11 +260,17 @@ nav {
   border-radius: 5px;
 }
 
-.modalPokemon-img{
-  width: 300px;
-  height: 200px;
-  align-items: center;
+.divModal-Padre {
+  display: block;
+}
+
+.divImagen-Hijo {
+  display: flex;
   justify-content: center;
-  margin-left: 100px;
-  margin-top: -40px;
+  align-items: center;
+}
+
+.modalPokemon-img {
+  width: 150px;
+  height: 150px;
 }

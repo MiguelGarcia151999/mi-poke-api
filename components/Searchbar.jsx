@@ -7,7 +7,7 @@ const Searchbar = () => {
   const [search, setSearch] = useState("");
   const [pokemon, setPokemon] = useState("");
   const [openModal, setOpenModal] = useState(false);
-  const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState(false);
   const [contenidoModal, setContenidoModal] = useState("");
 
   const onChange = (e) => {
@@ -16,22 +16,24 @@ const Searchbar = () => {
   };
 
   const BonClick = async (e) => {
-    setLoading(true)
+    setLoading(true);
     let data = await searchPokemon(search);
-    const {name, sprites} = data;
-    const {front_default} = data.sprites;
-    console.log('Hola', data)
+    const { name, sprites } = data;
+    const { front_default } = data.sprites;
+    console.log("Hola", data);
+    let imgPokemon1 = `https://img.pokemondb.net/artwork/large/${data.name}.jpg`;
+    let imgPokemon = `https://pokepedia.pro/imagenes/pokemon/${data.name}.png`
 
     const contenidoModal = (
-      <div>
-        <img src={front_default} alt={name} className="modalPokemon-img"/>
+      <div className="divModal-Padre">
+        <div className="divImagen-Hijo">
+          <img src={imgPokemon} alt={name} className="modalPokemon-img" />
+        </div>
       </div>
     );
     setPokemon(data);
     setContenidoModal(contenidoModal);
     setOpenModal(!openModal);
-
-
   };
 
   return (
@@ -41,24 +43,18 @@ const Searchbar = () => {
           <input placeholder="Buscar Pokemon..." onChange={onChange} />
         </div>
         <div className="searchbar-bttn">
-          
           <button onClick={() => BonClick()}>Buscar</button>
         </div>
       </div>
-        <ModalTarjetaPokemon
-          estado={openModal}
-          cambiarEstado={setOpenModal}
-          contenido={contenidoModal}
-        >
-          
-          <contenido1>
-            {contenidoModal}
-          </contenido1>
-        </ModalTarjetaPokemon>
+      <ModalTarjetaPokemon
+        estado={openModal}
+        cambiarEstado={setOpenModal}
+        contenido={contenidoModal}
+      >
+        <contenido1>{contenidoModal}</contenido1>
+      </ModalTarjetaPokemon>
     </>
   );
-
-  
 };
 
 export default Searchbar;
