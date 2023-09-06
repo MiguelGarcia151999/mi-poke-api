@@ -5,7 +5,7 @@ const { useContext } = React;
 
 const Navbar = () => {
   const { favoritePokemons } = useContext(FavoriteContext);
-  console.log(favoritePokemons);
+  //console.log(favoritePokemons);
 
   let imageUrl =
     "https://raw.githubusercontent.com/PokeAPI/media/master/logo/pokeapi_256.png";

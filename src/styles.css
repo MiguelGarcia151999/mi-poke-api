@@ -91,29 +91,34 @@ nav {
   display: flex;
 }
 
-.pokemon-numId{
+.pokemon-numId {
   flex: 1;
-  margin-top: 5px;
-  margin-left: 5px;
+  margin-top: 12px;
+  margin-left: 15px;
 }
 
-.pokemon-divBotton{
+.pokemon-divBotton {
   flex: 1;
- display: flex;
- justify-content: flex-end;
- margin-top: 5px;
- margin-right: 5px;
+  border:none;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 12px;
+  margin-right: 15px;
+}
+.pokemon-divBotton button{
+    background-color: transparent;
+    border: none;
 }
 
-.pokemon-cardHeader div:frist-child{
-background: red;
-color: blue;
+.pokemon-cardHeader div:frist-child {
+  background: red;
+  color: blue;
 }
 .pokedex-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 18px;
-  padding: 0px 10px;
+  padding: 0px 15px 0px 60px;
 }
 
 .pokemon-card {
@@ -123,22 +128,58 @@ color: blue;
   height: 400px;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 3px;
-  border: 2px solid rgba(58, 103, 252, 0.463);
+  border: 2px solid rgba(214, 116, 35, 0.463);
 }
 
-.pokemon-cardBodyDivImg{
+.pokemon-cardBodyDivImg {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.pokemon-cardBodyImg{
+.pokemon-cardBodyImg {
   width: 200px;
   height: 200px;
 }
 
 .pokemon-img-container {
   padding: 0px 5px;
+}
+
+.pokemon-cardLegs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pokemon-cardLegsHijo {
+  color: rgb(255, 255, 255);
+  text-transform: capitalize;
+  font-size: 25px;
+}
+
+.pokemon-cardFoot {
+  display: flex;
+  justify-content: space-between; /* Espacio entre los elementos */
+  align-items: center;
+  margin-top: 10px;
+}
+
+.pokemon-cardFootLeft,
+.pokemon-cardFootRight {
+  flex: 1; /* Distribuir el espacio de manera igual entre los elementos */
+  text-align: center;
+}
+
+.pokemon-cardFootleftD,
+.pokemon-cardFootRightD {
+  color: rgba(255, 255, 255, 0.447);
+}
+
+.pokemon-cardFootleftI,
+.pokemon-cardFootRightI {
+  font-weight: bold; /* Hacer el texto en negrita si es necesario */
+  color: rgb(255, 255, 255);
 }
 
 .pokemon-img {
@@ -151,7 +192,10 @@ color: blue;
 }
 
 .pokemon-type-text {
-  margin-right: 10px;
+  display: flex;
+  margin-top: 15px;
+  margin-left: 25px;
+  margin-right: 15px;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 3px;
@@ -225,8 +269,7 @@ color: blue;
   border: 2px solid rgb(96, 96, 176);
 }
 .dragon {
-  background-color: rgba(255, 255, 255, 0.913);
-  color: rgb(1, 1, 1);
+  color: rgb(255, 255, 255);
   border: 2px solid rgb(160, 80, 56);
 }
 .dark {
