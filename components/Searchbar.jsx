@@ -21,7 +21,6 @@ const Searchbar = () => {
     const { name, sprites } = data;
     const { front_default } = data.sprites;
     console.log("Hola", data);
-    let imgPokemon1 = `https://img.pokemondb.net/artwork/large/${data.name}.jpg`;
     let imgPokemon = `https://pokepedia.pro/imagenes/pokemon/${data.name}.png`
 
     const contenidoModal = (

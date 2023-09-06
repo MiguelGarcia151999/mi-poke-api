@@ -5,6 +5,8 @@ const Pokemon = (props) => {
   const { pokemon } = props;
   const { favoritePokemons, updateFavoritePokemons } =
     useContext(FavoriteContext);
+    let imgPokemon = `https://pokepedia.pro/imagenes/pokemon/${pokemon.name}.png`
+
 
   const redHeart = "❤️";
   const blackHeart = "🖤";
@@ -18,18 +20,20 @@ const Pokemon = (props) => {
     <div className="pokemon-card">
 
       <div className="pokemon-cardHeader">
-        <div>
-            Nº {pokemon.id}
-            </div>
-        <div>
-            <button onClick={clickHeart}>
-                <div className="pokemon-favorite">{heart}</div>
-            </button>
+        <div className="pokemon-numId"> 
+          Nº {pokemon.id}
+        </div>
+        <div className="pokemon-divBotton">
+          <button onClick={clickHeart}>
+            <div className="pokemon-favorite">{heart}</div>
+          </button>
         </div>
       </div>
 
       <div className="pokemon-cardBody">
-        <h1>HOladlerkbfnrkñlkbnkdk</h1>
+        <div className="pokemon-cardBodyDivImg">
+          <img src={imgPokemon} alt="" className="pokemon-cardBodyImg"/>
+        </div>
       </div>
 
     </div>

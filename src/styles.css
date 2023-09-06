@@ -90,6 +90,21 @@ nav {
   color: rgb(255, 255, 255);
   display: flex;
 }
+
+.pokemon-numId{
+  flex: 1;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.pokemon-divBotton{
+  flex: 1;
+ display: flex;
+ justify-content: flex-end;
+ margin-top: 5px;
+ margin-right: 5px;
+}
+
 .pokemon-cardHeader div:frist-child{
 background: red;
 color: blue;
@@ -108,7 +123,18 @@ color: blue;
   height: 400px;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 3px;
-  border: 2px solid rgba(192, 237, 45, 0.463);
+  border: 2px solid rgba(58, 103, 252, 0.463);
+}
+
+.pokemon-cardBodyDivImg{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pokemon-cardBodyImg{
+  width: 200px;
+  height: 200px;
 }
 
 .pokemon-img-container {
