@@ -79,11 +79,17 @@ nav {
 
 .header {
   display: flex;
+  margin-left: 50px;
+  margin-right: 40px;
   color: rgb(255, 255, 255);
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+}
+
+.Cargando{
+    color: rgb(255, 255, 255);
 }
 
 .pokemon-cardHeader {
